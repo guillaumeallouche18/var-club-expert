@@ -1,0 +1,7 @@
+{
+  "rewrites": [
+    { "source": "/api/var", "destination": "/api/var.js" },
+    { "source": "/api/clubs", "destination": "/api/clubs.js" },
+    { "source": "/", "destination": "/index.html" }
+  ]
+}
