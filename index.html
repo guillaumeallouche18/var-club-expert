@@ -155,7 +155,7 @@ function PlayerCard({ player, type }) {
         : <div className="player-photo-placeholder">⚽</div>
       }
       <div className="player-name">{player.nom}</div>
-      {player.annee && <div className="player-year">{player.annee}</div>}
+      {player.annee && parseInt(player.annee) > 1950 && parseInt(player.annee) < 2030 && <div className="player-year">{player.annee}</div>}
       <div className={`player-pts ${type}`}>{type==='direct'?'2 pts':'1 pt'}</div>
     </div>
   );
